@@ -6,16 +6,16 @@
     <display-name>Archetype Created Web Application</display-name>
     <servlet>
         <servlet-name>MainServlet</servlet-name>
-        <servlet-class>MainServlet</servlet-class>
+        <servlet-class>ru.nelly.mychat.MainServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>MainServlet</servlet-name>
-        <url-pattern>/mainpage</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <servlet>
         <servlet-name>ExitServlet</servlet-name>
-        <servlet-class>ExitServlet</servlet-class>
+        <servlet-class>ru.nelly.mychat.ExitServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ExitServlet</servlet-name>
@@ -24,7 +24,7 @@
 
     <servlet>
         <servlet-name>ChatServlet</servlet-name>
-        <servlet-class>ChatServlet</servlet-class>
+        <servlet-class>ru.nelly.mychat.ChatServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ChatServlet</servlet-name>

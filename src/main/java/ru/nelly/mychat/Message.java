@@ -1,3 +1,5 @@
+package ru.nelly.mychat;
+
 public class Message {
     private String userName;
     private String message;

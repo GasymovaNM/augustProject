@@ -1,3 +1,5 @@
+package ru.nelly.mychat;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -7,7 +9,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 @WebServlet(name = "ChatServlet")
 public class ChatServlet extends HttpServlet {
@@ -43,7 +44,7 @@ public class ChatServlet extends HttpServlet {
         writer.println("<p> <input type = \"submit\" value = \"Отправить\">");
         writer.println("<input type = \"reset\" value = \"Очистить\"></p>");
         writer.println("</form>");
-        writer.println("<p><a href=\"/mainpage\">Домой</a></p>");
+        writer.println("<p><a href=\"/\">Домой</a></p>");
         writer.println("</body>");
         writer.println("</head>");
         writer.println("</html>");

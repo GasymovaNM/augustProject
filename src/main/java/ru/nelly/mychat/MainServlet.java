@@ -1,3 +1,5 @@
+package ru.nelly.mychat;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.LocalDateTime;
@@ -15,7 +17,7 @@ public class MainServlet extends HttpServlet {
         System.out.println(name);
         HttpSession session = request.getSession();
         session.setAttribute("fullName", name);
-        response.sendRedirect("/mainpage");
+        response.sendRedirect("/");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -34,7 +36,7 @@ public class MainServlet extends HttpServlet {
             printWriter.println("<h1> Привет! Вы находитесь на главной странице! </h1>");
             printWriter.println("<h1>" + date + "</h1>");
             printWriter.println("<h1> Введите Ваше имя: </h1>");
-            printWriter.println("<form action=\"/mainpage\" method=\"post\">");
+            printWriter.println("<form action=\"/\" method=\"post\">");
             printWriter.println("<input type=\"text\" name=\"fullName\" size=\"40\">");
             printWriter.println("<input type=\"submit\" value=\"Отправить ответ\">");
             printWriter.println("</form>");
